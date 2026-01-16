@@ -8,6 +8,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         
+        :root { --primary-blue: #2563eb; }
+
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: #ffffff; 
@@ -16,7 +18,7 @@
             letter-spacing: -0.03em;
         }
 
-        /* 12-Column Grid Architecture */
+        /* 12-Column Responsive Grid */
         .grid-master { 
             display: grid; 
             grid-template-columns: repeat(12, 1fr); 
@@ -31,12 +33,12 @@
         }
 
         .hero-text { font-size: clamp(3.5rem, 11vw, 9rem); line-height: 0.8; font-weight: 800; text-transform: uppercase; }
-        .section-tag { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4em; color: #2563eb; display: block; margin-bottom: 1.5rem; }
+        .section-tag { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4em; color: var(--primary-blue); display: block; margin-bottom: 1.5rem; }
         .nav-link { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; transition: 0.3s; color: #666; }
-        .nav-link:hover { color: #2563eb; }
+        .nav-link:hover { color: var(--primary-blue); }
         
         .project-card:hover { background-color: #000; color: #fff; transition: 0.4s ease; }
-        .skill-tag { font-size: 12px; font-weight: 700; border: 1px solid #ddd; padding: 4px 10px; border-radius: 4px; background: #fff; color: #000; }
+        .skill-tag { font-size: 11px; font-weight: 700; border: 1px solid #ddd; padding: 4px 10px; border-radius: 4px; background: #fff; color: #000; }
     </style>
 </head>
 <body class="antialiased">
@@ -65,43 +67,42 @@
     <section id="about" class="grid-master">
         <div class="col-span-12 md:col-span-8 grid-cell">
             <span class="section-tag">/ 01. Profile</span>
-            <p class="text-4xl font-light leading-tight text-gray-800">
-                Student at <span class="font-bold italic">aivancity School Paris</span>[cite: 9, 30]. Seeking an alternance to contribute to impactful projects and apply skills in data analysis, machine learning, and NLP[cite: 6, 7].
+            <p class="text-4xl font-light leading-tight text-gray-800 italic">
+                Aspiring AI Engineer with a broad understanding in data analysis, machine learning, and NLP. Seeking an alternance to contribute to impactful projects.
             </p>
         </div>
-        <div class="col-span-12 md:col-span-4 grid-cell bg-gray-50">
-            <span class="section-tag">/ Objective</span>
-            <p class="text-lg text-gray-500 italic">Aspiring AI Engineer focused on production-ready systems and real-world problem solving[cite: 6].</p>
+        <div class="col-span-12 md:col-span-4 grid-cell bg-gray-50 flex flex-col justify-end">
+            <span class="section-tag">/ Base</span>
+            <p class="text-lg text-gray-500 font-medium">Paris, France</p>
         </div>
     </section>
 
     <section id="experience" class="grid-master">
         <div class="col-span-12 md:col-span-4 grid-cell bg-black text-white">
-            <span class="section-tag text-blue-400">/ 02. Industry Impact</span>
-            <h2 class="text-5xl font-black italic uppercase mt-12 leading-none">Professional<br>Execution.</h2>
+            <span class="section-tag text-blue-400">/ 02. Experience</span>
+            <h2 class="text-5xl font-black italic uppercase mt-12 leading-none">Industrial<br>Execution.</h2>
         </div>
         <div class="col-span-12 md:col-span-8 grid-cell">
             <div class="space-y-20">
                 <div>
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-4xl font-black italic uppercase">Craft AI</h3>
-                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Sept 2025 — Jan 2026 [cite: 33]</span>
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Sept 2025 — Jan 2026</span>
                     </div>
-                    <p class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-6 italic">AI Software Engineer [cite: 14]</p>
+                    <p class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-6 italic">AI Software Engineer</p>
                     <ul class="space-y-4 text-xl font-light text-gray-600">
-                        <li>• Engineered **"DocSync Agent"** using AST-based parsing[cite: 15].</li>
-                        <li>• Built deterministic NLP engine (TF-IDF/Cosine Similarity)[cite: 16].</li>
-                        <li>• Reduced manual review by **70%** via CI/CD.</li>
-                        <li>• Built real-time monitoring dashboard (FastAPI/Tailwind)[cite: 18].</li>
+                        <li>• Engineered **"DocSync Agent"** for technical documentation auditing using AST-parsing.</li>
+                        <li>• Integrated CI/CD via **GitHub Actions**, reducing manual review by 70%.</li>
+                        <li>• Built a deterministic NLP engine using **TF-IDF** and **Cosine Similarity**.</li>
                     </ul>
                 </div>
                 <div class="border-t border-black/10 pt-16">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-4xl font-black italic uppercase">Keyrus</h3>
-                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Jan — April 2025 [cite: 35]</span>
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Jan — April 2025</span>
                     </div>
-                    <p class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-6 italic">Data Scientist [cite: 19]</p>
-                    <p class="text-xl font-light text-gray-600">Developed a Generative AI tool for synthetic insurance data with custom constraints and a Streamlit interface[cite: 20, 21, 22].</p>
+                    <p class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-6 italic">Data Scientist</p>
+                    <p class="text-xl font-light text-gray-600">Built a Generative AI tool for synthetic insurance data with custom constraints and a Streamlit interface.</p>
                 </div>
             </div>
         </div>
@@ -113,24 +114,21 @@
             <h2 class="text-6xl font-black italic uppercase tracking-tighter">Technical Showcase</h2>
         </div>
         
-        <div class="col-span-12 md:col-span-8 grid-cell project-card group">
+        <a href="https://github.com/Mahek-makwana" target="_blank" class="col-span-12 md:col-span-8 grid-cell project-card group">
             <h4 class="text-4xl font-black uppercase italic mb-6">DocSync AI Agent</h4>
-            <p class="text-xl font-light mb-8 group-hover:text-gray-300">Automated documentation auditing reducing manual review by 70% using AST-parsing and CI/CD workflows[cite: 15, 17].</p>
-            <div class="flex gap-2 flex-wrap mb-8">
-                <span class="skill-tag">FastAPI</span> <span class="skill-tag">TailwindCSS</span> <span class="skill-tag">NLP</span>
-            </div>
-            <a href="https://github.com/Mahek-makwana" target="_blank" class="text-xs font-bold border-b-2 border-current">VIEW REPO →</a>
-        </div>
+            <p class="text-xl font-light mb-8 group-hover:text-gray-300">Automated technical manual auditing system synchronizing documentation with source code logic.</p>
+            <span class="text-xs font-bold border-b-2 border-current">GITHUB REPO →</span>
+        </a>
         
         <a href="https://github.com/Mahek-makwana" target="_blank" class="col-span-12 md:col-span-4 grid-cell project-card group">
-            <h4 class="text-3xl font-black uppercase italic mb-4">Sentiment Analysis BERT</h4>
-            <p class="text-gray-500 mb-6 group-hover:text-gray-400">Production-ready pipeline with Docker and GitHub Actions[cite: 47].</p>
+            <h4 class="text-3xl font-black uppercase italic mb-4">Sentiment BERT</h4>
+            <p class="text-gray-500 mb-6 group-hover:text-gray-400">Automated NLP deployment workflows using Docker and GitHub Actions.</p>
             <span class="text-xs font-bold border-b-2 border-current">GITHUB →</span>
         </a>
 
         <a href="https://github.com/Mahek-makwana" target="_blank" class="col-span-12 grid-cell project-card group">
-            <h4 class="text-4xl font-black uppercase italic mb-4">End-to-End MLOps</h4>
-            <p class="text-xl font-light mb-8 group-hover:text-gray-300">Implemented full training and deployment cycles with automated CI/CD containerization[cite: 47].</p>
+            <h4 class="text-4xl font-black uppercase italic mb-4">End-to-End MLOps Workflow</h4>
+            <p class="text-xl font-light mb-8 group-hover:text-gray-300">Implemented full training and deployment cycles with automated CI/CD pipelines and containerization.</p>
             <span class="text-xs font-bold border-b-2 border-current">VIEW SOURCE CODE →</span>
         </a>
     </section>
@@ -138,41 +136,16 @@
     <section class="grid-master">
         <div class="col-span-12 md:col-span-6 grid-cell">
             <span class="section-tag">/ 04. Technical Stack</span>
-            <div class="grid grid-cols-2 gap-8 mt-4">
-                <div>
-                    <h4 class="text-[10px] font-bold opacity-30 uppercase mb-4 tracking-widest">Core</h4>
-                    <p class="font-bold">Python, TypeScript, Rust, SQL [cite: 41]</p>
-                </div>
-                <div>
-                    <h4 class="text-[10px] font-bold opacity-30 uppercase mb-4 tracking-widest">AI/Ops</h4>
-                    <p class="font-bold">PyTorch, Docker, Kubernetes, MLOps [cite: 42, 43]</p>
-                </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="skill-tag">Python</span> <span class="skill-tag">Rust</span> <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">PyTorch</span> <span class="skill-tag">Hugging Face</span> <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Docker</span> <span class="skill-tag">Kubernetes</span> <span class="skill-tag">MLOps</span>
             </div>
         </div>
         <div class="col-span-12 md:col-span-6 grid-cell bg-gray-50">
-            <span class="section-tag">/ 05. Languages</span>
-            <div class="grid grid-cols-2 gap-y-4 text-sm font-bold uppercase italic">
-                <p>English [cite: 45] <span class="text-blue-600">— Fluent</span></p>
-                <p>French [cite: 45] <span class="text-blue-600">— Intermediate</span></p>
-                <p>Hindi [cite: 45] <span class="text-blue-600">— Native</span></p>
-                <p>Gujarati [cite: 45] <span class="text-blue-600">— Native</span></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-master">
-        <div class="col-span-12 grid-cell py-24 text-center">
-            <span class="section-tag">/ 06. Education</span>
-            <div class="space-y-10">
-                <div>
-                    <h3 class="text-3xl font-black italic uppercase">aivancity School Paris</h3>
-                    <p class="text-lg text-gray-500 italic">Master of Artificial Intelligence and Data Science | 2023 — 2028 [cite: 9, 30]</p>
-                </div>
-                <div class="border-t border-black/10 pt-10">
-                    <h3 class="text-2xl font-black italic uppercase">Kotak School Rajkot</h3>
-                    <p class="text-lg text-gray-500 italic">Higher Secondary Education | 2021 — 2023 [cite: 10, 31]</p>
-                </div>
-            </div>
+            <span class="section-tag">/ 05. Education</span>
+            <p class="text-xl font-bold uppercase italic leading-none mb-2">Aivancity School Paris</p>
+            <p class="text-sm text-gray-500 italic">Master of AI & Data Science (2023-2028)</p>
         </div>
     </section>
 
@@ -180,11 +153,11 @@
         <div class="col-span-12 grid-cell py-40 text-center">
             <h2 class="text-5xl md:text-[130px] font-black italic uppercase tracking-tighter mb-16 leading-none">Let's <span class="text-blue-600 underline underline-offset-8 decoration-4">Exchange.</span></h2>
             <a href="mailto:mahekmakwana137@gmail.com" class="text-3xl md:text-5xl font-bold tracking-tighter uppercase italic hover:text-blue-600 transition underline underline-offset-4"> 
-                mahekmakwana137@gmail.com 
+                mahekmakwana137@gmail.com
             </a>
             <div class="mt-24 flex justify-center gap-10">
-                <a href="https://linkedin.com/in/mahek-makwana" class="nav-link">LinkedIn </a>
-                <a href="https://github.com/Mahek-makwana" class="nav-link">GitHub </a>
+                <a href="https://linkedin.com/in/mahek-makwana" class="nav-link">LinkedIn</a>
+                <a href="https://github.com/Mahek-makwana" class="nav-link">GitHub</a>
             </div>
         </div>
     </footer>
