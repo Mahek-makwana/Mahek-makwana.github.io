@@ -8,161 +8,164 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030303; color: #ffffff; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .nav-link:hover { color: #60a5fa; transition: 0.3s; }
-        .bento-card { transition: transform 0.3s ease, border-color 0.3s ease; }
-        .bento-card:hover { transform: translateY(-5px); border-color: rgba(96, 165, 250, 0.5); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030303; color: #fff; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #a855f7, #f43f5e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bento-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bento-card:hover { transform: translateY(-8px); background: rgba(255, 255, 255, 0.05); border-color: rgba(59, 130, 246, 0.4); }
     </style>
 </head>
-<body class="selection:bg-blue-500/30">
+<body>
 
-    <nav class="fixed w-full z-50 px-6 py-6">
-        <div class="max-w-6xl mx-auto glass rounded-full px-8 py-3 flex justify-between items-center">
-            <span class="font-extrabold tracking-tighter text-xl uppercase">Mahek.<span class="text-blue-400">AI</span></span>
-            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em]">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="mailto:mahekmakwana137@gmail.com" class="bg-blue-600 px-4 py-1.5 rounded-full text-white hover:bg-blue-500 transition">Contact</a>
+    <nav class="fixed w-full z-50 px-6 py-6 top-0">
+        <div class="max-w-7xl mx-auto glass rounded-2xl px-8 py-3 flex justify-between items-center">
+            <div class="font-black text-xl tracking-tighter uppercase">MAHEK<span class="text-blue-500 italic">.AI</span></div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#technologies" class="hover:text-white transition">Tech</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#experience" class="hover:text-white transition">Work</a>
+                <a href="mailto:mahekmakwana137@gmail.com" class="text-blue-400 border border-blue-400/20 px-4 py-1 rounded-full">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center px-6 relative overflow-hidden">
-        <div class="max-w-6xl mx-auto relative z-10 pt-20">
-            <h2 class="text-blue-400 font-bold tracking-[0.5em] mb-6 uppercase text-[10px]">AI Engineer & Data Scientist</h2>
-            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
-                Unlocking the <br> <span class="gradient-text">Code of Intelligence.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed mb-12 font-light">
-                Fine-tuning algorithms to solve real-world logic drift. Specializing in <span class="text-white">Agentic AI</span>, 
-                <span class="text-white">LLMOps</span>, and <span class="text-white">Deterministic NLP</span>. Empowered by AI, empowering the world.
-            </p>
-            <div class="flex flex-wrap gap-6">
-                <a href="https://github.com/Mahek-makwana" class="bg-white text-black px-10 py-4 rounded-full font-bold hover:scale-105 transition flex items-center gap-2">
-                    <i class="fab fa-github"></i> View Repositories
-                </a>
-                <a href="https://linkedin.com/in/mahek-makwana" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/5 transition flex items-center gap-2">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+    <section class="min-h-screen flex flex-col justify-center px-6 pt-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-blue-500 font-bold tracking-[0.4em] uppercase text-[10px] mb-4 block">Paris, France</span>
+                <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
+                    Unlocking the <br> <span class="gradient-text">Code of Intelligence.</span>
+                </h1>
+                <p class="text-xl text-gray-400 max-w-xl leading-relaxed mb-10 font-light">
+                    Fine-tuning algorithms to solve real-world problems. Specialized in <strong>Agentic AI</strong> and <strong>LLMOps</strong> at aivancity Paris.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://github.com/Mahek-makwana" class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition">GitHub Projects</a>
+                    <a href="https://linkedin.com/in/mahek-makwana-014baa2ab" class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">LinkedIn</a>
+                </div>
             </div>
-        </div>
-        <div class="absolute -top-24 -right-24 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full"></div>
-    </section>
-
-    <section id="about" class="py-24 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-xs font-bold text-blue-400 uppercase tracking-widest mb-8 italic">// WHO AM I</h3>
-            <p class="text-3xl md:text-4xl font-light leading-snug text-gray-300 mb-10">
-                A student at <span class="text-white font-semibold italic">aivancity Paris</span> in the Grande École Program. 
-                I am on a quest to train the minds of both AI and my own, exploring the ethical implications and potential for real-world problem solving.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-10">
-                <div><p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Based</p><p class="font-semibold">Paris, France</p></div>
-                <div><p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Education</p><p class="font-semibold">Master AI & DS</p></div>
-                <div><p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Alternance</p><p class="font-semibold">Seeking Sept 2025</p></div>
-                <div><p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Languages</p><p class="font-semibold">English, French, Hindi</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-robot text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">Agentic AI</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">Autonomous Workflows</p>
-            </div>
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-server text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">LLMOps</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">CI/CD & Automation</p>
-            </div>
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-bolt text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">FastAPI</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">High Perf. Backend</p>
-            </div>
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-calculator text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">Vector Math</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">Semantic Analysis</p>
-            </div>
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-code text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">AST Parsing</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">Code Validation</p>
-            </div>
-            <div class="glass p-8 rounded-3xl bento-card text-center">
-                <i class="fas fa-box text-blue-400 text-3xl mb-4"></i>
-                <h4 class="font-bold text-lg mb-2">Docker</h4>
-                <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest uppercase">Containerization</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-32 px-6 bg-[#080808]">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="text-sm font-bold text-gray-500 uppercase tracking-[0.4em] mb-20 text-center italic">Clinical & Industrial Experience</h3>
-            
-            <div class="space-y-12">
-                <div class="glass p-10 rounded-[3rem] group">
-                    <div class="flex flex-col md:flex-row justify-between mb-8">
-                        <div>
-                            <p class="text-blue-400 font-bold text-xs uppercase mb-2">Sept 2025 — Jan 2026</p>
-                            <h4 class="text-3xl font-black">Craft AI</h4>
-                            <p class="text-gray-400 font-semibold uppercase text-xs tracking-widest mt-1">AI Software Engineer</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-xl leading-relaxed mb-8">
-                        Engineered the <span class="text-white font-medium italic">"DocSync Agent"</span> to automate technical documentation auditing. 
-                        Reduced manual review time by <span class="text-blue-400 font-bold">70%</span> through deterministic NLP and AST-based parsing.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-[10px] font-black uppercase">
-                        <span class="px-4 py-1.5 border border-white/10 rounded-full">TF-IDF</span>
-                        <span class="px-4 py-1.5 border border-white/10 rounded-full">Cosine Similarity</span>
-                        <span class="px-4 py-1.5 border border-white/10 rounded-full">TailwindCSS</span>
+            <div class="hidden md:block relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-20"></div>
+                <div class="relative glass p-10 rounded-[3rem] border-white/5">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4"><i class="fas fa-brain text-blue-500"></i> <span class="text-sm font-semibold">Agentic Orchestration</span></div>
+                        <div class="flex items-center gap-4"><i class="fas fa-code-branch text-purple-500"></i> <span class="text-sm font-semibold">CI/CD Validation</span></div>
+                        <div class="flex items-center gap-4"><i class="fas fa-layer-group text-pink-500"></i> <span class="text-sm font-semibold">Semantic Vector Logic</span></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="glass p-10 rounded-[3rem]">
-                    <p class="text-blue-400 font-bold text-xs uppercase mb-2">Jan — April 2025</p>
-                    <h4 class="text-3xl font-black">Keyrus</h4>
-                    <p class="text-gray-400 font-semibold uppercase text-xs tracking-widest mt-1 mb-6">Data Scientist</p>
-                    <p class="text-gray-400 text-lg leading-relaxed">
-                        Built a Generative AI tool for synthetic insurance data, enabling custom row/column constraints and real-time visualization via **Streamlit**.
-                    </p>
+    <section id="technologies" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.5em] mb-20 text-center">Core Engineering Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl bento-card border-t border-blue-500/20">
+                    <h3 class="text-lg font-bold mb-2">Agentic AI</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">Autonomous Workflows</p>
                 </div>
-
-                <div class="glass p-10 rounded-[3rem]">
-                    <p class="text-blue-400 font-bold text-xs uppercase mb-2">July — Sept 2024</p>
-                    <h4 class="text-3xl font-black">aivancity School</h4>
-                    <p class="text-gray-400 font-semibold uppercase text-xs tracking-widest mt-1 mb-6">Assistant Data Scientist</p>
-                    <p class="text-gray-400 text-lg leading-relaxed">
-                        Preprocessed radiological images for **veterinary diagnostics** and worked on LLMs for medical report generation to improve animal welfare.
-                    </p>
+                <div class="glass p-8 rounded-3xl bento-card border-t border-purple-500/20">
+                    <h3 class="text-lg font-bold mb-2">LLMOps</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">CI/CD & Automation</p>
+                </div>
+                <div class="glass p-8 rounded-3xl bento-card border-t border-pink-500/20">
+                    <h3 class="text-lg font-bold mb-2">Vector Math</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">Space Modeling</p>
+                </div>
+                <div class="glass p-8 rounded-3xl bento-card">
+                    <h3 class="text-lg font-bold mb-2">FastAPI</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">Backend Performance</p>
+                </div>
+                <div class="glass p-8 rounded-3xl bento-card">
+                    <h3 class="text-lg font-bold mb-2">AST Parsing</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">Code Analysis</p>
+                </div>
+                <div class="glass p-8 rounded-3xl bento-card">
+                    <h3 class="text-lg font-bold mb-2">Docker</h3>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-loose">Containerization</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-32 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="text-xs font-bold text-blue-400 uppercase tracking-[0.5em] mb-16 italic">Open Source Contribution</h3>
-            <div class="grid md:grid-cols-2 gap-10">
-                <a href="https://github.com/Mahek-makwana" class="glass p-12 rounded-[3.5rem] hover:border-blue-500/50 transition block">
+    <section id="projects" class="py-32 px-6 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-[10px] font-bold text-blue-500 uppercase tracking-[0.5em] mb-20 italic">/ Featured Repositories</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-10 rounded-[2.5rem] flex flex-col h-full bento-card">
                     <div class="flex justify-between items-start mb-8">
-                        <h4 class="text-3xl font-black">Sentiment Analysis BERT</h4>
-                        <i class="fab fa-github text-3xl text-gray-500"></i>
+                        <i class="fas fa-sync text-3xl text-blue-500"></i>
+                        <a href="https://github.com/Mahek-makwana" class="text-gray-500 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
                     </div>
-                    <p class="text-gray-500 mb-10 leading-relaxed">End-to-end MLOps workflow for BERT model training and deployment. Automated CI/CD via GitHub Actions and Docker.</p>
-                    <span class="text-[10px] font-black uppercase text-blue-400 border-b border-blue-400 pb-1">View Project Repo</span>
-                </a>
-                <a href="https://github.com/Mahek-makwana" class="glass p-12 rounded-[3.5rem] hover:border-blue-500/50 transition block">
+                    <h4 class="text-2xl font-bold mb-4 italic">DocSync Agent</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Flagship AI auditor built at Craft AI. Uses <strong>TF-IDF</strong> and <strong>Cosine Similarity</strong> to eliminate documentation drift. Reduced manual review by 70%.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">NLP</span>
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">Python</span>
+                    </div>
+                </div>
+
+                <div class="glass p-10 rounded-[2.5rem] flex flex-col h-full bento-card">
                     <div class="flex justify-between items-start mb-8">
-                        <h4 class="text-3xl font-black">CI/CD Logic Pipeline</h4>
-                        <i class="fab fa-github text-3xl text-gray-500"></i>
+                        <i class="fas fa-microchip text-3xl text-purple-500"></i>
+                        <a href="https://github.com/Mahek-makwana" class="text-gray-500 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
                     </div>
-                    <p class="text-gray-500 mb-10 leading-relaxed
+                    <h4 class="text-2xl font-bold mb-4 italic">BERT MLOps Pipeline</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        End-to-end sentiment analysis pipeline. Features automated model training and containerized deployment via <strong>GitHub Actions</strong> and <strong>Docker</strong>.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">Docker</span>
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="glass p-10 rounded-[2.5rem] flex flex-col h-full bento-card">
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fas fa-database text-3xl text-pink-500"></i>
+                        <a href="https://github.com/Mahek-makwana" class="text-gray-500 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 italic">GenAI Insurance Sim</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Generative data tool built at Keyrus. Produces realistic insurance datasets with complex user constraints using a custom <strong>Streamlit</strong> interface.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">Streamlit</span>
+                        <span class="text-[9px] font-bold border border-white/10 px-3 py-1 rounded-full uppercase">GenAI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.5em] mb-12">/ Identity</h2>
+            <div class="grid md:grid-cols-2 gap-20">
+                <p class="text-3xl md:text-5xl font-light leading-snug">
+                    Training the minds of <span class="text-blue-500 italic">both AI and my own</span> to build a better tomorrow.
+                </p>
+                <div class="space-y-6 text-gray-400 text-lg font-light leading-relaxed">
+                    <p>
+                        Currently in the <strong>Grande École Program</strong> at aivancity Paris[cite: 29]. I bridge the gap between technical logic and business impact.
+                    </p>
+                    <p>
+                        Fluent in <strong>English, Hindi, and Gujarati</strong>[cite: 31]. I am on a quest to explore the ethical implications of Agentic AI[cite: 32].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-40 px-6 text-center border-t border-white/5">
+        <h2 class="text-5xl md:text-8xl font-black mb-12 tracking-tighter uppercase italic">Let's <span class="gradient-text">Exchange.</span></h2>
+        <a href="mailto:mahekmakwana137@gmail.com" class="text-2xl font-light hover:text-blue-400 transition underline underline-offset-8 decoration-white/10">mahekmakwana137@gmail.com</a>
+        <p class="mt-20 text-[10px] text-gray-700 font-bold uppercase tracking-[0.4em]">Paris // Seeking Alternance Sept 2025</p>
+    </footer>
+
+</body>
+</html>
